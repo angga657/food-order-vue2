@@ -3,116 +3,116 @@ var order = new Vue({
     data: {
         toppingPizzas: [
             {
-                "id": 1,
-                "name": "Avocado",
-                "price": 1
+                id: 1,
+                name: "Avocado",
+                price: 1
             },
             {
-                "id": 2,
-                "name": "Broccoli",
-                "price": 1
+                id: 2,
+                name: "Broccoli",
+                price: 1
             },
             {
-                "id": 3,
-                "name": "Onions",
-                "price": 1
+                id: 3,
+                name: "Onions",
+                price: 1
             },
             {
-                "id": 4,
-                "name": "Zucchini",
-                "price": 1
+                id: 4,
+                name: "Zucchini",
+                price: 1
             },
             {
-                "id": 5,
-                "name": "Lobster",
-                "price": 2
+                id: 5,
+                name: "Lobster",
+                price: 2
             },
             {
-                "id": 6,
-                "name": "Oyster",
-                "price": 2
+                id: 6,
+                name: "Oyster",
+                price: 2
             },
             {
-                "id": 7,
-                "name": "Salmon",
-                "price": 2
+                id: 7,
+                name: "Salmon",
+                price: 2
             },
             {
-                "id": 8,
-                "name": "Tuna",
-                "price": 2
+                id: 8,
+                name: "Tuna",
+                price: 2
             },
             {
-                "id": 9,
-                "name": "Bacon",
-                "price": 3
+                id: 9,
+                name: "Bacon",
+                price: 3
             },
             {
-                "id": 10,
-                "name": "Duck",
-                "price": 3
+                id: 10,
+                name: "Duck",
+                price: 3
             },
             {
-                "id": 11,
-                "name": "Ham",
-                "price": 3
+                id: 11,
+                name: "Ham",
+                price: 3
             },
             {
-                "id": 12,
-                "name": "Sausage",
-                "price": 3
+                id: 12,
+                name: "Sausage",
+                price: 3
             }
         ],
         sizes: [
             {
-                "id": 1,
-                "name": "Small",
-                "extra_price": 0
+                id: 1,
+                name: "Small",
+                extra_price: 0
             },
             {
-                "id": 2,
-                "name": "Medium",
-                "extra_price": 5
+                id: 2,
+                name: "Medium",
+                extra_price: 5
             },
             {
-                "id": 3,
-                "name": "Large",
-                "extra_price": 7
+                id: 3,
+                name: "Large",
+                extra_price: 7
             }
         ],
         pizzas: [
             {
-                "id": 1,
-                "name": "Cheese Pizza",
-                "image": "../assets/pizza/Cheese_Pizza.png",
-                "price": 8,
-                "discount": {
-                    "is_active": false,
-                    "final_price": 8
+                id: 1,
+                name: "Cheese Pizza",
+                image: "../assets/pizza/Cheese_Pizza.png",
+                price: 8,
+                discount: {
+                    is_active: false,
+                    final_price: 8
                 },
-                "toppings": [1,2,3,4,8,11]
+                toppings: [1,2,3,4,8,11]
             },
             {
-                "id": 2,
-                "name": "Veggie Pizza",
-                "image": "../assets/pizza/Veggie_Pizza.png",
-                "price": 10,
-                "discount": {
-                    "is_active": true,
-                    "final_price": 8.5
+                id: 2,
+                name: "Veggie Pizza",
+                image: "../assets/pizza/Veggie_Pizza.png",
+                price: 10,
+                discount: {
+                    is_active: true,
+                    final_price: 8.5
                 },
-                "toppings": [2,3,4,5,6,7,9,11]
+                toppings: [2,3,4,5,6,7,9,11]
             },
             {
-                "id": 3,
-                "name": "Classical Pizza",
-                "image": "../assets/pizza/Classical_Pizza.png",
-                "price": 12,
-                "discount": {
-                    "is_active": false,
-                    "final_price": 12
+                id: 3,
+                name: "Classical Pizza",
+                image: "../assets/pizza/Classical_Pizza.png",
+                price: 12,
+                discount: {
+                    is_active: false,
+                    final_price: 12
                 },
-                "toppings": [2,3,4,8,9,10,11,12]
+                toppings: [2,3,4,8,9,10,11,12]
             }
         ],
         selectedPizza: null,
