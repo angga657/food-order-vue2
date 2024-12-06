@@ -123,7 +123,7 @@ var order = new Vue({
         selectPizza(pizzas) {
             this.selectedPizza = pizzas;
             this.selectedToppings = [];
-            this.selectedSize = 'Small';
+            this.selectedSize = this.sizes[0].name;
         },
         isToppingAvailable(toppingId) {
             return this.selectedPizza && this.selectedPizza.toppings.includes(toppingId);
@@ -148,7 +148,7 @@ var order = new Vue({
         },
         availableToppings() {
             if (!this.selectedPizza) return [];
-            return this.toppings.filter(topping => this.selectedPizza.toppings.includes(topping.id));
+            return this.toppingPizzas.filter(topping => this.selectedPizza.toppings.includes(topping.id));
         },
         basePrice() {
             if (!this.selectedPizza) return 0;
