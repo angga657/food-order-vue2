@@ -171,6 +171,59 @@ nav .btn.nav-link:hover {
 }
 
 
+/* Hapus gaya default */
+.custom-radio-input {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid darkgray; 
+    border-radius: 50%;
+    background-color: white; 
+    cursor: pointer;
+    position: relative; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Tambahkan lingkaran kecil di tengah saat dipilih */
+.custom-radio-input:checked::after {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px; 
+    height: 10px;
+    background-color: var(--base-color); 
+    border-radius: 50%;
+}
+
+/* Border dan isi berubah warna saat dipilih */
+.custom-radio-input:checked {
+    border-color: var(--base-color); 
+}
+
+/* Label untuk teks */
+.custom-radio-label {
+    margin-left: 8px; 
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Tambahkan efek hover */
+.custom-radio-input:hover {
+    border-color: #ffab40 !important;
+}
+
+/* Fokus pada radio button */
+.custom-radio-input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 4px var(--base-color); 
+}
+
+
 
 @media (max-width: 768px) {
     .hero h2 {
